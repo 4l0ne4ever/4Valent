@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You and me tonight</title>
+    <link rel="stylesheet" href="style.css">
+
+    <button tabindex="-1" id="bocchi2">NO</button>
+    <script>
+        const button2 = document.getElementById('bocchi2');
+        let left = 40;
+        button2.addEventListener('mouseover', function() {
+          if(left == 40){
+            left = 35;
+          }else{
+            left = 40;
+          }
+          this.style.left = left + '%';
+        });
+        if (window.matchMedia("(max-width: 700px)").matches){
+          let left = 30;
+          button2.addEventListener('mouseenter', function() {
+          if(left == 30){
+            left = 15;
+          }else{
+            left = 30;
+          }
+          this.style.left = left + '%';
+        });
+        }
+        </script>
+        
+
+</head>
+<body>
+  <iframe style="border-radius:12px" 
+  src="https://open.spotify.com/embed/playlist/5Mu1QUVBSgFCgmpcq75eBy?utm_source=generator&theme=0" 
+  width="100%" height="352" frameBorder="0" allowfullscreen="" autocapitalize=""
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy"></iframe>   
+<p class="heading">Can u be mine?</p>
+<img class="pic" src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif" alt="">
+<title>Bocchi</title>
+    <button id="bocchi1" onclick="openModal()">YES BBY!</button>
+
+
+    <dialog id="dialog">
+      <div class="tenor-gif-embed" data-postid="13163648" data-share-method="host" data-aspect-ratio="1.29371" data-width="100%"><a href="https://tenor.com/view/milk-and-mocha-i-love-you-gif-13163648">Milk And Mocha I Love You GIF</a>from <a href="https://tenor.com/search/milk+and+mocha-gifs">Milk And Mocha GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <br/>
+        <center><p>YAYY THANK U ! LOVE U</p></center>
+        
+    <button onclick="closeModal()" class="right">close ><</3></button>
+    </dialog>
+<script>
+    var dailog = document.getElementById("dialog"); 
+
+function openModal() { 
+    
+      dailog.showModal();
+} 
+
+function closeModal() { 
+    dailog.close(); 
+}
+</script>
+
+
+</body>
+</html>
